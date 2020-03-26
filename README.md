@@ -6,7 +6,7 @@
 
 #### a/ Setup
 * Download [Anaconda3](https://www.anaconda.com/distribution/)
-* Setup Virtual Environment
+* Setup Virtual Environment [here](https://docs.python.org/3/tutorial/venv.html)
 * Install Tensorflow, Matplotlib, Pillow, caffe. lxml, pandas, requests.
 * Install Cython, contextlib2, Protobuf 3.0.0, cocoapi.
 * Download [labelImg](https://github.com/tzutalin/labelImg).
@@ -131,7 +131,6 @@ python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resne
 ## TASK 2: FACE RECOGNITION WITH MOBILE APP
 
 ### 1/ Setup:
-* Create [Virtual Machine](https://developers.arcgis.com/android/10-2/sample-code/emulator/).
 * Install numpy, opencv, flask
 * Download [haarcascade](https://github.com/opencv/opencv/tree/master/data/haarcascades).
 * Download [Android Studio](https://developer.android.com/studio) .
