@@ -15,6 +15,8 @@
 #### b/ Project 1: run object_detection_tutorial.ipynb with another images
 
 #### - Result: 
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/project1.1.png)
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/project1.png)
 
 #### c/ Project 2: Using LabelImg tool to create files .xml
 #### - Step by step:
@@ -23,6 +25,8 @@
 ```vim
 python3 labelImg.py
 ```
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/labelImg.png)
+
 #### - Result: 
 ```xml
 <annotation>
@@ -71,6 +75,9 @@ generate_tfrecord.bat
 training.bat
 ```
 #### - Result: 
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/custom.png)
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/custom2.png)
+
 ### 2/ Deploy by Tensorflow-Serving
 
 #### a/ Setup
@@ -104,8 +111,11 @@ sudo docker run -p 8501:8501 -t faster_rcnn_resnet_serving &
 ```vim
 python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resnet:predict" --image_path "$(pwd)/object_detection/test_images/person2.jpg" --output_json "$(pwd)/object_detection/test_images/out_person2.json" --save_output_image "True" --label_map "$(pwd)/data/labels.pbtxt"
 ```
-
 #### - Result:
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/out_bicycle1.jpeg)
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/out_person2.jpeg)
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/tensorflowServing.png)
+
 #### - Tutorial [Link](https://towardsdatascience.com/deploy-your-machine-learning-models-with-tensorflow-serving-and-kubernetes-9d9e78e569db)
 
 #### c/ Project 2: Salary Forecast with Flask
@@ -116,6 +126,7 @@ python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resne
 * Step3: Run `python app.py`.
 * Step3: Navigate to URL `http://localhost:5000`.
 #### - Result:
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/Salary.png)
 
 ## Task 2 : Face Recognition with Mobile App
 
@@ -141,7 +152,7 @@ python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resne
 * Step5: upload image.
 
 #### - Result: 
-![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task2/FaceRecognitionWithOpenCV/Setup/Musk_error1.jpg)
+
 
 
 #### - Tutorial [link](https://www.youtube.com/watch?v=b7VkbAUqMqM&t=2495s)
