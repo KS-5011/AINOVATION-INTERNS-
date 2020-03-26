@@ -139,10 +139,7 @@ python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resne
 * learn how to convert .tf to .tflite [here]([https://www.tensorflow.org/lite/guide/get_started]).
 * Setup [Virtual Machine](https://developer.android.com/studio/run/managing-avds).
 
-### 2/ Dataset:
-* From kaggle and Pyimagesearch here.
-
-### 3/ Project 1: Using Haarcascade ( OpenCV ) and Flask
+### 2/ Project 1: Using Haarcascade ( OpenCV ) and Flask
 
 #### - Step by step:
 * Step1: cd /Task2/FaceRecognitionWithOpenCV/Setup, run `python app.py`.
@@ -152,12 +149,12 @@ python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resne
 * Step5: upload image.
 
 #### - Result: 
-
-
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task2/FaceRecognitionWithOpenCV/Setup/static/0.46949428815728256.jpg)
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task2/FaceRecognitionWithOpenCV/Setup/static/0.5924112645827373.jpg)
 
 #### - Tutorial [link](https://www.youtube.com/watch?v=b7VkbAUqMqM&t=2495s)
 
-### 4/ Project 2: Using examples tensorflow with realtime
+### 3/ Project 2: Using examples tensorflow with realtime
 
 #### - Step by step:
 * Step1: cd /Task2/FaceRecognitionWithTensorflow.
@@ -166,8 +163,9 @@ python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resne
 * Step4: run FaceRecognitionWithTensorflow with Virtual Machine.
 
 #### - Result: 
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task2/received_131199474664966.png)
 
-### 5/ Project 3: Using React-Native and TensorFlow.js (NOW)
+### 4/ Project 3: Using React-Native and TensorFlow.js (NOW)
 
 #### a/ Setup
 * Download [React-Native](https://reactnative.dev/docs/getting-started).
@@ -181,3 +179,10 @@ python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resne
 * How to use [codesandbox](https://codesandbox.io/s/new)
 
 #### To Be Continued . . .
+
+## Task 3: Download Qoobee
+### - Step by Step:
+* Step1: Using extension `Agenty` on Chorme
+* Step2: Follow instruction, We get the csv file just like in task3
+
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task3/Quoobee.png)
