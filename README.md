@@ -1,6 +1,6 @@
 # AINOVATION-INTERNS
 
-## Task 1: Object Detection
+## TASK 1: OBJECT DETECTION
 
 ### 1/ Explore object detection
 
@@ -12,13 +12,13 @@
 * Download [labelImg](https://github.com/tzutalin/labelImg).
 * Download github [models](https://github.com/tensorflow/models/tree/master/research/object_detection) and setup.
 
-#### b/ Project 1: run object_detection_tutorial.ipynb with another images
+#### b/ PROJECT 1: run object_detection_tutorial.ipynb with another images
 
 #### - Result: 
 ![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/project1.1.png)
 ![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/project1.png)
 
-#### c/ Project 2: Using LabelImg tool to create files .xml
+#### c/ PROJECT 2: Using LabelImg tool to create files .xml
 #### - Step by step:
 * Step1: cd ~/Task1/labelImg-master
 * Step2: Run
@@ -58,7 +58,7 @@ python3 labelImg.py
 ```
 
 
-#### d/ Project 3: Custom Object Detection
+#### d/ PROJECT 3: Custom Object Detection
 
 #### - Step by step:
 * Step1: cd /Task1/CustomObjectDetection.
@@ -87,7 +87,7 @@ training.bat
 * Download [Tensorflow Serving](https://github.com/tensorflow/serving)
 * Setup [Docker](https://github.com/fpaupier/tensorflow-serving_sidecar/blob/master/docs/setup.md) for Serving. 
 
-#### b/ Project 1: Create a custom Tensorflow-Serving docker image
+#### b/ PROJECT 1: Create a custom Tensorflow-Serving docker image
 
 #### - Step by step:
 * Step1: cd /Task1/TensorflowServingSidecar.
@@ -118,17 +118,17 @@ python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resne
 
 #### - Tutorial [Link](https://towardsdatascience.com/deploy-your-machine-learning-models-with-tensorflow-serving-and-kubernetes-9d9e78e569db)
 
-#### c/ Project 2: Salary Forecast with Flask
+#### c/ PROJECT 2: Predict Salary with Flask
 
 #### - Step by step:
-* Step1: cd /Task1/SalaryForecast.
+* Step1: cd /Task1/PredictSalary.
 * Step2: Run `python model.py`
 * Step3: Run `python app.py`.
 * Step3: Navigate to URL `http://localhost:5000`.
 #### - Result:
 ![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/Salary.png)
 
-## Task 2 : Face Recognition with Mobile App
+## TASK 2: FACE RECOGNITION WITH MOBILE APP
 
 ### 1/ Setup:
 * Create Virtual Machine
@@ -139,7 +139,7 @@ python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resne
 * learn how to convert .tf to .tflite [here]([https://www.tensorflow.org/lite/guide/get_started]).
 * Setup [Virtual Machine](https://developer.android.com/studio/run/managing-avds).
 
-### 2/ Project 1: Using Haarcascade ( OpenCV ) and Flask
+### 2/ PROJECT 1: Using Haarcascade ( OpenCV ) and Flask
 
 #### - Step by step:
 * Step1: cd /Task2/FaceRecognitionWithOpenCV/Setup, run `python app.py`.
@@ -154,7 +154,7 @@ python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resne
 
 #### - Tutorial [link](https://www.youtube.com/watch?v=b7VkbAUqMqM&t=2495s)
 
-### 3/ Project 2: Using examples tensorflow with realtime
+### 3/ PROJECT 2: Using examples tensorflow with realtime
 
 #### - Step by step:
 * Step1: cd /Task2/FaceRecognitionWithTensorflow.
@@ -165,7 +165,7 @@ python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resne
 #### - Result: 
 ![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task2/received_131199474664966.png)
 
-### 4/ Project 3: Using React-Native and TensorFlow.js (NOW)
+### 4/ PROJECT 3: Using React-Native and TensorFlow.js (NOW)
 
 #### a/ Setup
 * Download [React-Native](https://reactnative.dev/docs/getting-started).
@@ -180,7 +180,7 @@ python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resne
 
 #### To Be Continued . . .
 
-## Task 3: Download Qoobee
+## TASK 3: DOWNLOAD QOOBEE
 ### - Step by Step:
 * Step1: Using extension `Agenty` on Chorme
 * Step2: Follow instruction, We get the csv file just like in task3
