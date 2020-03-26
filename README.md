@@ -78,6 +78,8 @@ training.bat
 ![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/custom.png)
 ![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/custom2.png)
 
+#### - Tutorial [Link](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/tree/master/5_part%20step%20by%20step%20custom%20object%20detection)
+
 ### 2/ Deploy by Tensorflow-Serving
 
 #### a/ Setup
@@ -127,6 +129,8 @@ python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resne
 * Step3: Navigate to URL `http://localhost:5000`.
 #### - Result:
 ![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/Salary.png)
+
+#### - Tutorial [Link](https://github.com/krishnaik06/Deployment-flask)
 
 ## TASK 2: FACE RECOGNITION WITH MOBILE APP
 
