@@ -5,8 +5,8 @@
 ### 1/ Explore Object Detection
 
 #### a/ Setup
-* Download [Anaconda3](https://www.anaconda.com/distribution/)
-* Setup Virtual Environment [here](https://docs.python.org/3/tutorial/venv.html)
+* Download [Anaconda3](https://www.anaconda.com/distribution/).
+* Setup Virtual Environment [here](https://docs.python.org/3/tutorial/venv.html).
 * Install Tensorflow, Matplotlib, Pillow, caffe. lxml, pandas, requests.
 * Install Cython, contextlib2, Protobuf 3.0.0, cocoapi.
 * Download [labelImg](https://github.com/tzutalin/labelImg).
@@ -84,7 +84,7 @@ training.bat
 * Install flask.
 * Download and learn [Postman](https://www.postman.com/downloads/).
 * Download [google cloud sdk](https://cloud.google.com/sdk).
-* Download [Tensorflow Serving](https://github.com/tensorflow/serving)
+* Download [Tensorflow Serving](https://github.com/tensorflow/serving).
 * Setup [Docker](https://github.com/fpaupier/tensorflow-serving_sidecar/blob/master/docs/setup.md) for Serving. 
 
 #### b/ PROJECT 1: Create a custom Tensorflow-Serving docker image
