@@ -20,7 +20,7 @@
 
 #### c/ PROJECT 2: Using LabelImg tool to create files .xml
 #### - Step by step:
-* Step1: cd ~/Task1/labelImg-master
+* Step1: cd /Task1/labelImg-master
 * Step2: Run
 ```vim
 python3 labelImg.py
