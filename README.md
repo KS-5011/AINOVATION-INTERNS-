@@ -141,6 +141,8 @@ python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resne
 * Step5: upload image.
 
 #### - Result: 
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task2/FaceRecognitionWithOpenCV/Setup/Musk_error1.jpg)
+
 
 #### - Tutorial [link](https://www.youtube.com/watch?v=b7VkbAUqMqM&t=2495s)
 
