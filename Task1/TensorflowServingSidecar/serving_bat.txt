@@ -1,0 +1,25 @@
+sudo docker run -t --rm -p 8501:8501 \
+    -v "$(pwd)/data/faster_rcnn_resnet101_coco_2018_01_28:/models/faster_rcnn_resnet" \
+    -e MODEL_NAME=faster_rcnn_resnet \
+    tensorflow/serving &
+
+
+python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resnet:predict" --image_path "$(pwd)/object_detection/test_images/bicycle1.jpg" --output_json "$(pwd)/object_detection/test_images/out_bicycle1.json" --save_output_image "True" --label_map "$(pwd)/data/labels.pbtxt"
+
+python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resnet:predict" --image_path "$(pwd)/object_detection/test_images/person2.jpg" --output_json "$(pwd)/object_detection/test_images/out_person2.json" --save_output_image "True" --label_map "$(pwd)/data/labels.pbtxt"
+
+
+
+docker cp $Downloads/faster_rcnn_resnet101_coco_2018_01_28 serving_base:/models/faster_rcnn_resnet
+
+
+python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resnet:predict" \
+--image_path "$(pwd)/object_detection/test_images/image1.jpg" \
+--output_json "$(pwd)/object_detection/test_images/out_image2.json" \
+--save_output_image "True" \
+--label_map "$(pwd)/data/labels.pbtxt"
+
+
+tar zxvf google-cloud-sdk-231.0.0-linux-x86_64.tar.gz google-cloud-sdk
+
+link tutorial: https://towardsdatascience.com/deploy-your-machine-learning-models-with-tensorflow-serving-and-kubernetes-9d9e78e569db
