@@ -93,11 +93,11 @@ training.bat
 * Step1: cd /Task1/TensorflowServingSidecar.
 * Step2: Run a serving image as a daemon:
 ```vim
-sudo docker run -d --name serving_base tensorflow/serving`
+sudo docker run -d --name serving_base tensorflow/serving
 ```
 * Step3: Copy the `faster_rcnn_resnet101_coco` model data to the container's `models/` folder:
 ```vim
-sudo docker cp $(pwd)/data/faster_rcnn_resnet101_coco_2018_01_28 serving_base:/models/faster_rcnn_resnet`
+sudo docker cp $(pwd)/data/faster_rcnn_resnet101_coco_2018_01_28 serving_base:/models/faster_rcnn_resnet
 ```
 * Step4: Commit the container to serve the `faster_rcnn_resnet` model:
 ```vim
