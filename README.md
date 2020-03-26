@@ -15,6 +15,8 @@
 #### b/ Project 1: run object_detection_tutorial.ipynb with another images
 
 #### - Result: 
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/project1.1.png)
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/project1.png)
 
 #### c/ Project 2: Using LabelImg tool to create files .xml
 #### - Step by step:
@@ -23,6 +25,8 @@
 ```vim
 python3 labelImg.py
 ```
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/labelImg.png)
+
 #### - Result: 
 ```xml
 <annotation>
@@ -71,6 +75,9 @@ generate_tfrecord.bat
 training.bat
 ```
 #### - Result: 
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/custom.png)
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/custom2.png)
+
 ### 2/ Deploy by Tensorflow-Serving
 
 #### a/ Setup
@@ -86,11 +93,11 @@ training.bat
 * Step1: cd /Task1/TensorflowServingSidecar.
 * Step2: Run a serving image as a daemon:
 ```vim
-sudo docker run -d --name serving_base tensorflow/serving`
+sudo docker run -d --name serving_base tensorflow/serving
 ```
 * Step3: Copy the `faster_rcnn_resnet101_coco` model data to the container's `models/` folder:
 ```vim
-sudo docker cp $(pwd)/data/faster_rcnn_resnet101_coco_2018_01_28 serving_base:/models/faster_rcnn_resnet`
+sudo docker cp $(pwd)/data/faster_rcnn_resnet101_coco_2018_01_28 serving_base:/models/faster_rcnn_resnet
 ```
 * Step4: Commit the container to serve the `faster_rcnn_resnet` model:
 ```vim
@@ -104,8 +111,11 @@ sudo docker run -p 8501:8501 -t faster_rcnn_resnet_serving &
 ```vim
 python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resnet:predict" --image_path "$(pwd)/object_detection/test_images/person2.jpg" --output_json "$(pwd)/object_detection/test_images/out_person2.json" --save_output_image "True" --label_map "$(pwd)/data/labels.pbtxt"
 ```
-
 #### - Result:
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/out_bicycle1.jpeg)
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/out_person2.jpeg)
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/tensorflowServing.png)
+
 #### - Tutorial [Link](https://towardsdatascience.com/deploy-your-machine-learning-models-with-tensorflow-serving-and-kubernetes-9d9e78e569db)
 
 #### c/ Project 2: Salary Forecast with Flask
@@ -116,6 +126,7 @@ python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resne
 * Step3: Run `python app.py`.
 * Step3: Navigate to URL `http://localhost:5000`.
 #### - Result:
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/Salary.png)
 
 ## Task 2 : Face Recognition with Mobile App
 
@@ -128,10 +139,7 @@ python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resne
 * learn how to convert .tf to .tflite [here]([https://www.tensorflow.org/lite/guide/get_started]).
 * Setup [Virtual Machine](https://developer.android.com/studio/run/managing-avds).
 
-### 2/ Dataset:
-* From kaggle and Pyimagesearch here.
-
-### 3/ Project 1: Using Haarcascade ( OpenCV ) and Flask
+### 2/ Project 1: Using Haarcascade ( OpenCV ) and Flask
 
 #### - Step by step:
 * Step1: cd /Task2/FaceRecognitionWithOpenCV/Setup, run `python app.py`.
@@ -141,10 +149,12 @@ python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resne
 * Step5: upload image.
 
 #### - Result: 
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task2/FaceRecognitionWithOpenCV/Setup/static/0.46949428815728256.jpg)
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task2/FaceRecognitionWithOpenCV/Setup/static/0.5924112645827373.jpg)
 
 #### - Tutorial [link](https://www.youtube.com/watch?v=b7VkbAUqMqM&t=2495s)
 
-### 4/ Project 2: Using examples tensorflow with realtime
+### 3/ Project 2: Using examples tensorflow with realtime
 
 #### - Step by step:
 * Step1: cd /Task2/FaceRecognitionWithTensorflow.
@@ -153,8 +163,9 @@ python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resne
 * Step4: run FaceRecognitionWithTensorflow with Virtual Machine.
 
 #### - Result: 
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task2/received_131199474664966.png)
 
-### 5/ Project 3: Using React-Native and TensorFlow.js (NOW)
+### 4/ Project 3: Using React-Native and TensorFlow.js (NOW)
 
 #### a/ Setup
 * Download [React-Native](https://reactnative.dev/docs/getting-started).
@@ -168,3 +179,10 @@ python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resne
 * How to use [codesandbox](https://codesandbox.io/s/new)
 
 #### To Be Continued . . .
+
+## Task 3: Download Qoobee
+### - Step by Step:
+* Step1: Using extension `Agenty` on Chorme
+* Step2: Follow instruction, We get the csv file just like in task3
+
+![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task3/Quoobee.png)
