@@ -2,7 +2,7 @@
 
 ## TASK 1: OBJECT DETECTION
 
-### 1/ Explore object detection
+### 1/ Explore Object Detection
 
 #### a/ Setup
 * Download [Anaconda3](https://www.anaconda.com/distribution/)
@@ -12,7 +12,7 @@
 * Download [labelImg](https://github.com/tzutalin/labelImg).
 * Download github [models](https://github.com/tensorflow/models/tree/master/research/object_detection) and setup.
 
-#### b/ PROJECT 1: run object_detection_tutorial.ipynb with another images
+#### b/ PROJECT 1: Run object_detection_tutorial.ipynb with another images
 
 #### - Result: 
 ![alt](https://github.com/KS-5011/AINOVATION-INTERNS-/blob/master/Task1/project1.1.png)
