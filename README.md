@@ -131,12 +131,12 @@ python client.py --server_url "http://localhost:8501/v1/models/faster_rcnn_resne
 ## TASK 2: FACE RECOGNITION WITH MOBILE APP
 
 ### 1/ Setup:
-* Create Virtual Machine
+* Create [Virtual Machine](https://developers.arcgis.com/android/10-2/sample-code/emulator/).
 * Install numpy, opencv, flask
-* Download [haarcascade](https://github.com/opencv/opencv/tree/master/data/haarcascades)
+* Download [haarcascade](https://github.com/opencv/opencv/tree/master/data/haarcascades).
 * Download [Android Studio](https://developer.android.com/studio) .
-* Download github [examples]([https://github.com/tensorflow/examples](https://github.com/tensorflow/examples)) tensorflow.
-* learn how to convert .tf to .tflite [here]([https://www.tensorflow.org/lite/guide/get_started]).
+* Download github [examples](https://github.com/tensorflow/examples) tensorflow.
+* learn how to convert .tf to .tflite [here](https://www.tensorflow.org/lite/guide/get_started#2_convert_the_model_format).
 * Setup [Virtual Machine](https://developer.android.com/studio/run/managing-avds).
 
 ### 2/ PROJECT 1: Using Haarcascade ( OpenCV ) and Flask
